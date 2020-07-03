@@ -1,0 +1,63 @@
+<div fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="100">
+  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center">
+    <div fxLayoutAlign="center" fxFlex="100" fxFlex.gt-xs="30" class="ml-20 mr-16" *ngFor="let item of data">
+      <mat-card class="card-size">
+        <mat-card-header>
+          <mat-card-title>{{item.titlename}}</mat-card-title>
+          <mat-card-subtitle>{{item.subtitlename}}</mat-card-subtitle>
+        </mat-card-header>
+        <img class="mat-card-image" [src]="item.img">
+        <mat-card-content>
+          <h4>รายละเอียด</h4>
+          <p>{{item.about}}</p>
+        </mat-card-content>
+        <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="100">
+  <div fxLayout="row wrap" fxFlex="100" class="pt-20">
+    <div fxLayoutAlign="center" fxFlex="100" fxFlex.gt-xs="20" class="pl-20 pr-16">
+      ตัวอย่างการเขียน fxFlex
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <div fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="100">
+  <div fxLayout="row wrap" fxFlex="100" class="pt-20">
+    <div fxLayoutAlign="center" fxFlex="100" fxFlex.gt-xs="20" class="pl-20 pr-16">
+      <mat-form-field class="example-full-width" appearance="outline" fxFlex>
+        <mat-label>คำนำหน้าชื่อ</mat-label>
+        <mat-select formControlName="title" name="title">
+          <mat-option *ngFor="let itemt of title" [value]="itemt.viewValue">
+            {{itemt.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div fxLayoutAlign="center" fxFlex="100" fxFlex.gt-xs="40" class="pl-20 pr-16">
+      <mat-form-field class="example-full-width" appearance="outline" fxFlex>
+        <mat-label>ชื่อ</mat-label>
+        <input matInput formControlName="firstName" name="firstName">
+        <mat-error *ngIf="tvdscustomerForm.get('firstName').hasError('required')">
+          กรุณาระบุ ชื่อ
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div fxLayoutAlign="center" fxFlex="100" fxFlex.gt-xs="40" class="pl-20 pr-16">
+      <mat-form-field class="example-full-width" appearance="outline" fxFlex>
+        <mat-label>นามสกุล</mat-label>
+        <input matInput formControlName="lastName" name="lastName">
+        <mat-error *ngIf="tvdscustomerForm.get('lastName').hasError('required')">
+          กรุณาระบุ นามสกุล
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div> -->

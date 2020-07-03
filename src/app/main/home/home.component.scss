@@ -1,0 +1,16 @@
+.card-size {
+  // width: 20%;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.mat-card-image {
+  width: calc(100% + 32px);
+  margin: 0 -16px 16px -16px;
+  margin-top: 0px;
+  margin-right: -16px;
+  margin-bottom: 16px;
+  margin-left: -16px;
+}
