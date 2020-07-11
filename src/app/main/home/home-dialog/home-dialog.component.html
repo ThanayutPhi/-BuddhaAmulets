@@ -1,0 +1,73 @@
+<div fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="100" fxLayoutAlign="center">
+  <div fxLayout="row wrap" fxFlex="100" class="pt-20" fxLayoutAlign="center">
+    <div fxFlex="100" fxFlex.gt-xs="50" class="padding-size">
+      <img class="mat-card-image" [src]="students.img">
+    </div>
+    <div fxFlex="100" fxFlex.gt-xs="50" fxLayoutAlign="center">
+      <div fxLayout="column" fxFlex="100" class="padding-size">
+        <h2 mat-dialog-title>{{students.titlename}}</h2>
+        <p class="text-subtitle">{{students.subtitlename}}</p>
+        <h3>รายละเอียด</h3>
+        <p>{{students.about}}</p>
+        <div>
+          <button (click)="onClose(students)">กลับ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div fxLayout="row" fxFlex="100">
+  <div fxLayout="column" class="column-size" fxFlex="100">
+    <img class="mat-card-image" [src]="students.img">
+  </div>
+  <div fxLayout="column" class="column-size" fxFlex="100">
+    <h2 mat-dialog-title>{{students.titlename}}</h2>
+    <p class="text-subtitle">{{students.subtitlename}}</p>
+    <h3>รายละเอียด</h3>
+    <p>{{students.about}}</p>
+  </div>
+</div> -->
+
+
+
+<!-- <div fxLayout="row" fxFlex.gt-xs="50" fxFlex="100">
+  <div fxLayout="column" class="column-size" fxFlex="100">
+    <img class="mat-card-image" [src]="students.img">
+  </div>
+  <div fxLayout="column" class="column-size" fxFlex="100">
+    <h2 mat-dialog-title>{{students.titlename}}</h2>
+    <p class="text-subtitle">{{students.subtitlename}}</p>
+    <h3>รายละเอียด</h3>
+    <p>{{students.about}}</p>
+  </div>
+</div> -->

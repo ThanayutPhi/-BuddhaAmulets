@@ -30,3 +30,12 @@ $BA-Web-theme: mat-light-theme($BA-Web-primary, $BA-Web-accent, $BA-Web-warn);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.my-class .mat-dialog-container{
+  height: 600px;
+  width: 100%;
+  border-radius: 10px;
+  background: lightcyan;
+  color: #039be5;
+}

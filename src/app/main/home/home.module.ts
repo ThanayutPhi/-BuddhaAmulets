@@ -7,23 +7,25 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
 
+import { MatDialogModule } from '@angular/material/dialog';
+import { HomeDialogComponent } from './home-dialog/home-dialog.component';
+
+import { SliderModule } from 'angular-image-slider';
+
+
 const routes = [
   {
     path: "home",
     component: HomeComponent,
-    // resolve: { items: TvdsTestService }
-    // canActivate: [AuthenGuardService]
   },
   {
     path: '**',
     component: HomeComponent,
-    // resolve: { items: TvdsTestService }
-    // canActivate: [AuthenGuardService]
   }
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, HomeDialogComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
@@ -33,7 +35,12 @@ const routes = [
 
     MatFormFieldModule,
     MatInputModule,
-    MatRippleModule
+    MatRippleModule,
+    MatDialogModule,
+    SliderModule
+  ],
+  entryComponents: [
+    HomeDialogComponent
   ]
 })
 export class HomeModule { }
